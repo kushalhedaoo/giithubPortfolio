@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: lightslategray;
+    text-transform: capitalize;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container .email-signature {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 2px 10px #000;
+    padding: 10px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .email-signature .image img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 3px 5px 10px #333;
+    position: relative;
+}
+
+.container .email-signature .image::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 70%;
+    height: 400px;
+    width: 400px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    box-shadow: 20px 0 0 #92A9BD;
+}
+
+.content {
+    padding-left: 80px;
+}
+
+.content .name {
+    padding-left: 30px;
+    font-size: 25px;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.content .post {
+    font-size: 18px;
+    margin: 10px 30px;
+    padding: 5px 15px;
+    background-color: #FDEFF4;
+    border-radius: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.content .contact {
+    margin-top: 30px;
+
+}
+
+li {
+    color: #f0f0f0;
+    font-size: 20px;
+    margin: 10px;
+}
+
+li img {
+    border-radius: 100%;
+    padding: 3px;
+    background-color: darkgrey;
+}
+
+.content .icons {
+    position: absolute;
+    top: 10%;
+    right: 25px;
+    /* transform: translateY(-50%); */
+    display: flex;
+    flex-flow: column;
+}
+.content .icons .facebook:hover{
+    transform: scale(2);
+    border-radius: 100%;
+    padding: 3px;
+    background-color: darkgrey;
+}
+.content .icons .link:hover{
+    transform: scale(2);
+    border-radius: 100%;
+    padding: 3px;
+    background-color: darkgrey;
+}
+
+.content .icons .insta:hover{
+    transform: scale(2);
+    border-radius: 100%;
+    padding: 3px;
+    background-color: darkgrey;
+}
+
+
+.content .icons .twitter:hover{
+    transform: scale(2);
+    border-radius: 100%;
+    padding: 3px;
+    background-color: darkgrey;
+}
+.content .icons a {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 30px;
+    background-color: darkgray;
+}
+@media(max-width:750px)
+{
+    .container .email-signature{
+        flex-flow: column;
+        width: 90%;
+    }
+    .container .email-signature .image::before {
+        width: 100%;
+        box-shadow: 0 15px 0 #92A9BD;
+        top: -35%;
+        left: 0%;
+    }
+    .content{
+        width: 100%;
+        text-align: center;
+        padding: 45px;
+        /* font-size: xx-large; */
+    }
+    .content .name{
+        font-size: 50px;
+        word-spacing: 10px;
+    }
+    .content  .post{
+        font-size: 30px;
+        margin: 10px 90px;
+        padding-left: 0;
+        border-radius: 20px;
+    }
+    li{
+        text-align: left;
+    }
+    .icons{
+        margin: 250px 0px;
+        bottom: -80%;
+        /* flex-flow: column; */
+        /* flex-direction: column-reverse; */
+        /* justify-content: center; */
+        /* align-items: baseline; */
+        transform: rotate(270deg);
+        
+    }
+    a{
+        margin: 0 5px ;
+        transform: rotate(90deg);
+    }
+}
